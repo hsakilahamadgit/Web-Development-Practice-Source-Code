@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #btn{
+      height: 30px;
+      width: 30px;
+      border-radius: 3px;
+      border:none;
+    }
+    .js-even{
+      background-color: blueviolet;
+    }
+    .js-odd{
+      background-color: rgb(201, 186, 27);
+    }
+  </style>
+</head>
+<body>
+  <button id="btn" onclick="btnUpdate()">0</button>
+  <script>
+    let numOfTimeCkicked=localStorage.getItem('num')||0;
+    function btnUpdate(){
+      let btnCli=document.querySelector('#btn');
+      numOfTimeCkicked++;
+      localStorage.setItem('num',numOfTimeCkicked);
+      if(numOfTimeCkicked%2==0){
+        btnCli.classList.add('js-even')
+        btnCli.classList.remove('js-odd');
+
+       }
+       else{
+        btnCli.classList.remove('js-even');
+        btnCli.classList.add('js-odd');
+       }
+
+      btnCli.innerText=numOfTimeCkicked;
+    }
+
+
+  </script>
+</body>
+</html>

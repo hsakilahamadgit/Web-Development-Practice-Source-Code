@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h3 id="time"></h3>
+  <script>
+ function doGreeting(name){
+  let date=new Date();
+let hours=date.getHours;
+let heading=document.querySelector('#time')
+if(hours>5 && hours<12){
+  heading.innerText=`Good Morning ${name}`;
+
+}
+else if(hours>12&& hours<15){
+  heading.innerText=`Good AfterNoon ${name}`;
+}
+else{
+  heading.innerText=`Good Night ${name}`;
+}
+//console.log(date);
+// let day=date.getDay();
+// let mon=date.getMonth();
+// console.log(mon);
+
+// console.log(day);
+// console.log(date.getDay());
+// console.log(date.getTime);
+
+
+ }
+ doGreeting('shakil');
+  </script>
+</body>
+</html>

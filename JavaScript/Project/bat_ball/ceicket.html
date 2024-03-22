@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body{
+      text-align: center;
+    }
+    
+  </style>
+  
+  <title>Cricket</title>
+</head>
+<body>
+  <h1>Bat Ball Stump Game</h1>
+<button onclick="
+let userChoiceMsg='You have chosen Bat';
+let  computerChoice;
+let randomNumber=Math.random()*3;
+if(randomNumber>0 && randomNumber<=1){
+   computerChoice='Bat';
+  //console.log('computer Choice is bat')
+}
+else if(randomNumber>1 && randomNumber<=2){
+   computerChoice='Ball';
+  //console.log('computerChoice is Ball');
+}
+else{
+   computerChoice='Stump';
+ // console.log('computerChoice is  Stump');
+}
+const computerChoiceMsg=`Computer choice is ${computerChoice}`;
+
+let resultMsg;
+if(computerChoice==='Ball'){
+  resultMsg='User Won';
+}
+else if(computerChoice==='Bat'){
+  resultMsg='It is tie';
+  
+}
+else{
+  resultMsg='Computer has won';
+}
+
+alert(`${userChoiceMsg} ${computerChoiceMsg} ${resultMsg}`)
+
+
+
+"
+
+
+
+>Bat</button>
+
+
+<button onclick="
+let userChoice='You have chosen Ball';
+let  computerChoose;
+let randomNum=Math.random()*3;
+if(randomNum>0 && randomNum<=1){
+  computerChoose='Bat';
+  //console.log('computer Choice is bat')
+}
+else if(randomNum>1 && randomNum<=2){
+  computerChoose='Ball';
+  //console.log('computerChoice is Ball');
+}
+else{
+  computerChoose='Stump';
+ // console.log('computerChoice is  Stump');
+}
+const computerChoiceMsgg=`Computer choice is ${computerChoose}`;
+
+let resultMsgg;
+if(computerChoose==='Bat'){
+  resultMsgg='Computer Won';
+}
+else if(computerChoose==='Ball'){
+  resultMsgg='It is tie';
+  
+}
+else{
+  resultMsgg='User has won';
+}
+
+alert(`${userChoice} ${computerChoiceMsgg} ${resultMsgg}`)
+
+
+
+">Ball</button>
+
+
+<button onclick="
+let userChoiceBall='You have chosen Stump';
+let  computerChooseany;
+let randomNumb=Math.random()*3;
+if(randomNumb>0 && randomNumb<=1){
+  computerChooseany='Bat';
+  //console.log('computer Choice is bat')
+}
+else if(randomNumb>1 && randomNumb<=2){
+  computerChooseany='Ball';
+  //console.log('computerChoice is Ball');
+}
+else{
+  computerChooseany='Stump';
+ // console.log('computerChoice is  Stump');
+}
+const computerChoiceMsggg=`Computer choice is ${computerChooseany}`;
+
+let resultMsggg;
+if(computerChooseany==='Bat'){
+  resultMsggg='user won';
+}
+else if(computerChooseany==='Ball'){
+  resultMsggg='computer won';
+  
+}
+else{
+  resultMsggg='it is tie';
+}
+
+alert(`${userChoiceBall} ${computerChoiceMsggg} ${resultMsggg}`)
+
+
+
+">Stump</button>
+  
+</body>
+</html>

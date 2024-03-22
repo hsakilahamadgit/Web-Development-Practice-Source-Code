@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+  <!-- this is external method to apply css come in last position in priority of css method-->
+  <link rel="stylesheet" href="index.css">
+  <!-- this is internal method to apply css and its come second position in priority of css-->
+  <!-- <style>
+    #first{
+      color: blue;
+    }
+  </style> -->
+  <style>
+    #second{
+      color:pink;
+    }
+    .special{
+      color: brown;
+    }
+    second p{
+      color: chartreuse;
+
+    }
+    #first1,#second2{
+      color: darkmagenta;
+    }
+  </style>
+
+</head>
+<body>
+  <h1 style="color: red;">this is my headding</h1>
+  <hr>
+  <div id="first">
+    <h1 style="color: aqua;">this is my second heading</h1>
+  </div>
+
+  <div id="second">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis ab, iure eveniet id corporis dolor. Quos consequatur eos necessitatibus consectetur.</p>
+    <p class="special">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, sapiente.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, fuga!</p>
+  </div><br>
+
+  <div id="first1">
+    <p>hi this is first div</p>
+  </div>
+  <div id="second2"> <p>hi this ia second <div></div></p></div>
+  
+</body>
+</html>

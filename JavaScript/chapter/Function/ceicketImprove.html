@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body{
+      text-align: center;
+    }
+    
+  </style>
+  
+  <title>Cricket</title>
+</head>
+<body>
+  <h1>Bat Ball Stump Game</h1>
+<button onclick="
+let computerChoice=generateComputerChoice();
+let userChoiceMsg='You have chosen Bat';
+
+
+const computerChoiceMsg=`Computer choice is ${computerChoice}`;
+
+let resultMsg;
+if(computerChoice==='Ball'){
+  resultMsg='User Won';
+}
+else if(computerChoice==='Bat'){
+  resultMsg='It is tie';
+  
+}
+else{
+  resultMsg='Computer has won';
+}
+
+alert(`${userChoiceMsg} ${computerChoiceMsg} ${resultMsg}`)
+
+
+
+"
+
+
+
+>Bat</button>
+
+
+<button onclick="
+let userChoice='You have chosen Ball';
+ computerChoice=generateComputerChoice();
+const computerChoiceMsgg=`Computer choice is ${computerChoice}`;
+
+let resultMsgg;
+if(computerChoice==='Bat'){
+  resultMsgg='Computer Won';
+}
+else if(computerChoice==='Ball'){
+  resultMsgg='It is tie';
+  
+}
+else{
+  resultMsgg='User has won';
+}
+
+alert(`${userChoice} ${computerChoiceMsgg} ${resultMsgg}`)
+
+
+
+">Ball</button>
+
+
+<button onclick="
+let userChoiceBall='You have chosen Stump';
+computerChoice =generateComputerChoice();
+const computerChoiceMsggg=`Computer choice is ${computerChoice}`;
+
+let resultMsggg;
+if(computerChoice==='Bat'){
+  resultMsggg='user won';
+}
+else if(computerChoice==='Ball'){
+  resultMsggg='computer won';
+  
+}
+else{
+  resultMsggg='it is tie';
+}
+
+alert(`${userChoiceBall} ${computerChoiceMsggg} ${resultMsggg}`)
+
+
+
+">Stump</button>
+  
+
+  <script>
+    
+            function generateComputerChoice(){
+                  let randomNumber=Math.random()*3;
+            if(randomNumber>0 && randomNumber<=1){
+              return'Bat';
+              //console.log('computer Choice is bat')
+            }
+            else if(randomNumber>1 && randomNumber<=2){
+              return'Ball';
+              //console.log('computerChoice is Ball');
+            }
+            else{
+              return'Stump';
+            // console.log('computerChoice is  Stump');
+            }
+    } 
+
+  </script>
+</body>
+</html>
